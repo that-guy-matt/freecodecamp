@@ -1,0 +1,160 @@
+/* table of contents
+
+  = variables
+  = base
+  = layout
+  = modules
+  = state
+  = theme
+*/
+
+/* variables */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Special+Elite&display=swap');
+
+$text: 'Montserrat', sans-serif;
+$headings: 'Special Elite', cursive;
+
+/* base */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: $text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings;
+  text-align: center;
+  margin-top: 1.2em;
+}
+
+main {
+  background-color: white;
+  padding: 1em;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* layout */
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.flex-container p {
+  display: inline-block;
+  margin: 1em 1.4em;
+  text-align: justify;
+}
+
+.flex-container img {
+  margin: 1em 1.4em;
+}
+
+#img-div {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.masthead-img {
+  max-width: 1920px;
+  position: absolute;
+  left: auto;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.quote {
+  width: 40%;
+  max-width: 750px;
+  position: absolute;
+  right: 8%;
+  top: 40%;
+}
+
+/* modules */
+
+#img-caption {
+  display: none;
+}
+
+.quote {
+  color: white;
+  font-family: $headings;
+  font-size: 2em;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-bottom: 2em;;
+}
+
+#site-footer {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+/* state */
+
+@media screen and (max-width: 1330px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+
+  .flex-container p{
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .quote {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .quote {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .quote {
+    font-size: 1.3em;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .quote {
+    font-size: 1em;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .quote {
+    font-size: .7em;
+  }
+
+  .flex-container p {
+    max-width: 90%;
+  }
+}
+
+/* theme = probably wont be anything here */
