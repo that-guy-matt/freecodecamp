@@ -8,7 +8,7 @@
   = theme
 */
 /* variables */
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat&display=swap");
 /* base */
 * {
   margin: 0;
@@ -17,11 +17,16 @@
 
 body {
   background-color: black;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Courier Prime", monospace;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Special Elite", cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-top: 1.2em;
 }
@@ -39,6 +44,14 @@ main {
 }
 
 /* layout */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -61,12 +74,10 @@ main {
 }
 
 .masthead-img {
-  max-width: 1920px;
   position: absolute;
-  left: auto;
+  width: auto;
   top: 0;
   width: 100%;
-  height: auto;
   z-index: -1;
 }
 
@@ -75,7 +86,13 @@ main {
   max-width: 750px;
   position: absolute;
   right: 8%;
-  top: 40%;
+  top: 20%;
+}
+.quote h1 {
+  margin-bottom: 20px;
+}
+.quote p:first-of-type {
+  margin-bottom: 20px;
 }
 
 /* modules */
@@ -84,9 +101,8 @@ main {
 }
 
 .quote {
-  color: white;
-  font-family: "Special Elite", cursive;
-  font-size: 2em;
+  color: #bbb999;
+  font-size: 1.8em;
 }
 
 hr {
@@ -114,23 +130,24 @@ hr {
 }
 @media screen and (max-width: 1099px) {
   .quote {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
 }
 @media screen and (max-width: 1024px) {
-  .quote {
-    font-size: 1.5em;
-  }
-}
-@media screen and (max-width: 800px) {
   .quote {
     font-size: 1.3em;
     top: 10%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .quote {
     font-size: 1em;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .quote {
+    font-size: 0.8em;
     top: 10%;
   }
 }
