@@ -1,1 +1,2 @@
-# My freecodecamp.org projects
+# Freecodecamp.org projects
+This is a collection of my projects from the freecodecamp.org curriculum. It includes the certification projects as well as anything else that required creative thought to complete, such as algorithm problems.
