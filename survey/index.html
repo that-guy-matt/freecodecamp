@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en";>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="styles/styles.css"/>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <div class="background">
+            <div class="title">
+              <h1 id="title">Survey Form</h1>
+            </div>
+        
+            <div class="container">
+              <p id="description">Give me your personal information.</p>
+              <form id="survey-form" class="flex-container">
+                <div class="labels">
+                  <label for="name" id="name-label">* Name: </label>
+                </div>
+                <input type="text" id="name" class="input-field" name="name" required placeholder="Enter your name">
+        
+                <div class="labels">
+                  <label for="email" id="email-label">* Email: </label>
+                </div>
+                <input type="email" id="email" class="input-field" name="email" required placeholder="Enter your email">
+        
+                <div class="labels">
+                  <label for="age" id="number-label">* Age: </label>
+                </div>
+                <input type="number" id="number" class="input-field" name="age" required placeholder="Enter your age" min="18" max="100">
+                <div class="labels">
+                  <label for="assoc" id="dropdown" class="dropdown">What flavor geek are you?</label>
+                </div>
+                <select name="assoc" id="dropdown" class="dropdown">
+                  <option selected disabled>Please select an option</option>
+                  <option value="star-wars">Star Wars</option>
+                  <option value="lord-of-the-rings">Lord of the Rings</option>
+                  <option value="star-trek">Star Trek</option>
+                  <option value="pokemon">Pokemon</option>
+                  <option value="dragonball">Dragon Ball</option>
+                  <option value="doctor-who">Doctor Who</option>
+                  <option value="all">All of the above</option>
+                  <option value="other">Other</option>
+                </select>
+        
+                <div class="labels">
+                  <label for="alignment">Choose your alignment: </label>
+                </div>
+                <ul class="radio-group">
+                  <li class="select-item"><input type="radio" id="align-lg" name="alignment" value="lawful-good">
+                  <label for="align-lg">Lawful Good</label></li>
+        
+                  <li class="select-item"><input type="radio" id="align-ng" name="alignment" value="neutral-good">
+                  <label for="align-ng">Neutral Good</label></li>
+        
+                  <li class="select-item"><input type="radio" id="align-cg" name="alignment" value="chaotic-good">
+                  <label for="align-cg">Chaotic Good</label></li>
+        
+                  <li class="select-item"><input type="radio" id="align-ln" name="alignment" value="lawful-neutral">
+                  <label for="align-ln">Lawful Neutral</label></li>
+        
+                  <li class="select-item"><input type="radio" id="align-tn" name="alignment" value="true-neutral">
+                  <label for="align-tn">True Neutral</label></li>
+        
+                  <li class="select-item"><input type="radio" id="align-cn" name="alignment" value="chaotic-neutral">
+                  <label for="align-cg">Chaotic Neutral</label></li>
+        
+                  <li class="select-item"><input type="radio" id="align-le" name="alignment" value="lawful-evil">
+                  <label for="align-le">Lawful Evil</label></li>
+        
+                  <li class="select-item"><input type="radio" id="align-ne" name="alignment" value="neutral-evil">
+                  <label for="align-ne">Neutral Evil</label></li>
+        
+                  <li class="select-item"><input type="radio" id="align-ce" name="alignment" value="chaotic-evil">
+                  <label for="align-ce">Chaotic Evil</label></li>
+                </ul>
+        
+                <div class="labels">
+                  <label for="checkbox">Pick a box, any box, but not that box: </label>
+                </div>
+                <ul class="checkbox-group">
+                  <li class="select-item"><label><input type="checkbox" name="checkbox" value="box">Box</label></li>
+        
+                  <li class="select-item"><label><input type="checkbox" name="checkbox" value="another-box">Another Box</label></li>
+        
+                  <li class="select-item"><label><input type="checkbox" name="checkbox" value="yet-another-box">Yet Another Box</label>
+        
+                  <li class="select-item"><label><input type="checkbox" name="checkbox" value="not-that-box">Not That Box</label></li>
+        
+                  <li class="select-item"><label><input type="checkbox" name="checkbox" value="that-box" disabled>That Box</label></li>
+                </ul>
+        
+                <div class="labels">
+                  <label for="story">Write me a short story: </label>
+                </div>
+                <textarea name="story" id="story" cols="30" rows="10" class="input-field" placeholder="Enter text here..."></textarea>
+        
+                <button id="submit" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+    </body>
+</html>
